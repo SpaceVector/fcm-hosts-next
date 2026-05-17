@@ -60,7 +60,7 @@ jobs:
     needs: harvest
     # Use any runner registered under this fork. Add custom labels here if you
     # maintain multiple self-hosted runners and want this job pinned to one.
-    runs-on: [self-hosted]
+    runs-on: [self-hosted, fcm-probe]
     name: Verify and Select Premium IPs
     timeout-minutes: 15
 
