@@ -58,7 +58,9 @@ jobs:
 
   verify:
     needs: harvest
-    runs-on: [self-hosted, Linux, X64, jdcloud, china-bgp]
+    # Use any runner registered under this fork. Add custom labels here if you
+    # maintain multiple self-hosted runners and want this job pinned to one.
+    runs-on: [self-hosted]
     name: Verify and Select Premium IPs
     timeout-minutes: 15
 
